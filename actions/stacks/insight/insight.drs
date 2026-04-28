@@ -29,5 +29,5 @@ Service :stack_insight, image: 'dtorry/stack-insight', ports: 7000 do
     # systemctl restart systemd-logind && sleep 3 && systemctl status systemd-logind --no-pager --full
   end
 
-  oauth_provider 'oauth2_oauth2_yandex:8080/auth'
+  oauth_provider 'oauth2_oauth2_slim:7000/auth'
 end
